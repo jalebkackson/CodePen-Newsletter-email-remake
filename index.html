@@ -19,19 +19,20 @@
         text-decoration: none;
         color: #76adff;
       }
-      .td-column1 {
-        padding: 30px;
+      .div-col-1 {
+        direction: ltr;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
       }
-      .td-column2 {
-        padding: 30px;
+      .div-col-2 {
+        direction: ltr;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
       }
-      .td-div-1 {
-        max-width: 300px;
-        width: 95%;
-      }
-      .td-div-2 {
-        max-width: 300px;
-        width: 95%;
+      .highlight-card {
+        padding: 25px 0;
       }
       .ch-imgs {
         margin: 0;
@@ -150,6 +151,7 @@
         max-width: 600px;
         width: 100%;
         padding-top: 20px;
+        direction: ltr;
       "
     >
       <!-- main table -->
@@ -158,133 +160,164 @@
         cellpadding="0"
         cellspacing="0"
         role="presentation"
+        align="center"
         style="
           vertical-align: top;
           max-width: 600px;
           width: 100%;
           border-collapse: collapse;
+          direction: ltr;
         "
       >
         <tr>
-          <!-- first column -->
-          <td valign="top">
-            <div>
+          <td valign="top" style="direction: ltr; padding: 20px 0">
+            <!-- first column -->
+            <div class="div-col-1">
               <table
                 border="0"
                 cellpadding="0"
                 cellspacing="0"
                 role="presentation"
-                style="
-                  vertical-align: top;
-                  max-width: 300px;
-                  width: 100%;
-                  border-collapse: collapse;
-                "
+                width="100%"
               >
-                <!-- C1 row 1 -->
                 <tr>
-                  <td align="left" valign="top" class="td-column1">
-                    <div class="td-div-1">
-                      <img
-                        class="ch-imgs"
-                        src="https://ci3.googleusercontent.com/proxy/1TLd4lJBYUxxmGjReLqvLOCvY27wS3vCm4uQ0Cv4Lk-JiYbJmBdfoUr8_1ZMwM_dXduXetOeunvlZEzC4YaX5XxgzDbwbjHjBjG59cECVr0LYAcgWzKauSne9TBcSWH4wrNJOIcfOOj3DJuVcGh6giTxd_LkB9CjkLdJkdZXpNJ5R5QI_oCz=s0-d-e1-ft#https://production-codepen-email-assets.s3-us-west-2.amazonaws.com/production/8wKqEVLOSIWehmBPb7rK_optimus-prime.png"
-                        alt="Optimus Prime with CSS Transform"
-                        width="260"
-                      />
-                      <p class="img-subtext">pen</p>
-                      <a class="ch-title" href="">
-                        Optimus Prime with CSS Transform
-                      </a>
-                      <p class="community-highlights-text">
-                        Jhey Tompkins takes the transform property to the max in
-                        this interactive illustration of Optimus Prime of
-                        Transformers fame. Click the "Slow down?" checkbox to
-                        watch it in slowmo. BYO transformation sounds.
-                      </p>
-                    </div>
-                  </td>
-                </tr>
-                <!-- C1 row 2 -->
-                <tr>
-                  <td align="left" class="td-column1">
-                    <div class="td-div-1">
-                      <img
-                        class="ch-imgs"
-                        src="https://ci3.googleusercontent.com/proxy/5_kIqw0hA6W-xSz_ZbVQQGn7LH7jQSwmDIyQx6en1l94c0pwsYOo_1pMBhN7E5vWilelNKdv8g-U_6I4GmDvX7Lqr-06yiogpyfRpck04LwlIct7SwEOjumJ34HhzSo2MwARv321d_NY9onaHueeqfLevTZ7QZe4g-s2jZwr2Oct9UJVInEXlCThrQ=s0-d-e1-ft#https://production-codepen-email-assets.s3-us-west-2.amazonaws.com/production/Z2UUeH85SGGcJxV2iaIW_cpc-range-sliders.png"
-                        alt="#CodePenChallenge: Range Sliders"
-                        width="260"
-                      />
-                      <p class="img-subtext">collection</p>
-                      <a class="ch-title" href="">
-                        #CodePenChallenge: Range Sliders
-                      </a>
-                      <p class="community-highlights-text">
-                        The community showed off a lot of range in the 2nd week
-                        of the Choice UI #CodePenChallenge! Slide through our
-                        collection of Pens from week two, including Pens by Mads
-                        Stoumann, Shane Burns, William Bardon, and Calleb.
-                      </p>
-                    </div>
+                  <td style="vertical-align: top; padding: 5px">
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      width="100%"
+                      style="max-width: 260px"
+                    >
+                      <tr>
+                        <td
+                          align="left"
+                          style="padding: 10px 20px; word-break: break-word"
+                        >
+                          <!-- C1 row 1 -->
+                          <div class="highlight-card">
+                            <img
+                              class="ch-imgs"
+                              src="https://ci3.googleusercontent.com/proxy/1TLd4lJBYUxxmGjReLqvLOCvY27wS3vCm4uQ0Cv4Lk-JiYbJmBdfoUr8_1ZMwM_dXduXetOeunvlZEzC4YaX5XxgzDbwbjHjBjG59cECVr0LYAcgWzKauSne9TBcSWH4wrNJOIcfOOj3DJuVcGh6giTxd_LkB9CjkLdJkdZXpNJ5R5QI_oCz=s0-d-e1-ft#https://production-codepen-email-assets.s3-us-west-2.amazonaws.com/production/8wKqEVLOSIWehmBPb7rK_optimus-prime.png"
+                              alt="Optimus Prime with CSS Transform"
+                              width="260"
+                            />
+                            <p class="img-subtext">pen</p>
+                            <a class="ch-title" href="">
+                              Optimus Prime with CSS Transform
+                            </a>
+                            <p class="community-highlights-text">
+                              Jhey Tompkins takes the transform property to the
+                              max in this interactive illustration of Optimus
+                              Prime of Transformers fame. Click the "Slow down?"
+                              checkbox to watch it in slowmo. BYO transformation
+                              sounds.
+                            </p>
+                          </div>
+                          <!-- C1 r2 -->
+                          <div class="highlight-card">
+                            <img
+                              class="ch-imgs"
+                              src="https://ci3.googleusercontent.com/proxy/5_kIqw0hA6W-xSz_ZbVQQGn7LH7jQSwmDIyQx6en1l94c0pwsYOo_1pMBhN7E5vWilelNKdv8g-U_6I4GmDvX7Lqr-06yiogpyfRpck04LwlIct7SwEOjumJ34HhzSo2MwARv321d_NY9onaHueeqfLevTZ7QZe4g-s2jZwr2Oct9UJVInEXlCThrQ=s0-d-e1-ft#https://production-codepen-email-assets.s3-us-west-2.amazonaws.com/production/Z2UUeH85SGGcJxV2iaIW_cpc-range-sliders.png"
+                              alt="#CodePenChallenge: Range Sliders"
+                              width="260"
+                            />
+                            <p class="img-subtext">pen</p>
+                            <a class="ch-title" href="">
+                              #CodePenChallenge: Range Sliders
+                            </a>
+                            <p class="community-highlights-text">
+                              The community showed off a lot of range in the 2nd
+                              week of the Choice UI #CodePenChallenge! Slide
+                              through our collection of Pens from week two,
+                              including Pens by Mads Stoumann, Shane Burns,
+                              William Bardon, and Calleb.
+                            </p>
+                          </div>
+                          <!-- c1 r3 -->
+                          <!-- c1 r4 -->
+                          <!-- c1 r5 -->
+                          <!-- c1 r6 -->
+                          <!-- c1 r7 -->
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
             </div>
           </td>
-          <!-- second column -->
-          <td valign="top">
-            <div>
+          <td valign="top" style="direction: ltr; padding: 20px 0">
+            <!-- second column -->
+            <div class="div-col-2">
               <table
                 border="0"
                 cellpadding="0"
                 cellspacing="0"
                 role="presentation"
-                style="
-                  vertical-align: top;
-                  max-width: 300px;
-                  width: 100%;
-                  border-collapse: collapse;
-                "
+                width="100%"
               >
-                <!-- c2 r1 -->
                 <tr>
-                  <td align="left" class="td-column2">
-                    <div class="td-div-2">
-                      <img
-                        class="ch-imgs"
-                        src="https://ci4.googleusercontent.com/proxy/N3Q4YRUnuzHNcm3iEIic6cfajln2fiMvBY11UoRJPIF0VTD-TGC8mVPmLDM85guWOEWuYqgr6I7IXC8w6WRdZX4ipK_G5EM8NBoL5oq5sB9SUn13pcxd3venoSRK_OOg9KldjCOwUlj0OiBVofi_DxcfvqHhkWEp8UpMptH6ji9vsJnR=s0-d-e1-ft#https://production-codepen-email-assets.s3-us-west-2.amazonaws.com/production/BB4CTLYvTgypbvoHYlG0_sunday-css.png"
-                        alt="All kinds of shapes for CSS Art"
-                        width="260"
-                      />
-                      <p class="img-subtext">link</p>
-                      <a class="ch-title" href="">
-                        All kinds of shapes for CSS Art
-                      </a>
-                      <p class="community-highlights-text">
-                        Watch and learn as Julia Miocene begins a series of four
-                        videos on making shapes that turn into CSS art. You can
-                        follow along with the Pen as you watch!
-                      </p>
-                    </div>
-                  </td>
-                </tr>
-                <!-- c2 r2 -->
-                <tr>
-                  <td align="left" class="td-column1">
-                    <div class="td-div-1">
-                      <img
-                        class="ch-imgs"
-                        src="https://ci3.googleusercontent.com/proxy/1_jmjf3L7hhH4TQGalyHJBqBmGHLy2Fj-ra1cLzup-ayYl73wOczR8Qmw1oTNVH2Od51NVW8MtRdhYzDv-SHjDZQafXneLkRE15ocm2Bc-HUYz5IFkDLA9C3DK_MlcEe1OUz_VSPbcr7YX70E15F81FF9HQSxHeTbF5-xjKCrFr-PspfY-Wm7-hGKhQjiQ=s0-d-e1-ft#https://production-codepen-email-assets.s3-us-west-2.amazonaws.com/production/fkWZ7WGSP1EPoG9ZsG5A_infinite-scaffolding.png"
-                        alt="Infinite Scaffolding"
-                        width="260"
-                      />
-                      <p class="img-subtext">pen</p>
-                      <a class="ch-title" href=""> Infinite Scaffolding </a>
-                      <p class="community-highlights-text">
-                        Carter Lovelace takes the "under construction" page to a
-                        new heights with this infinite-scrolling scaffolding,
-                        complete with a gently bouncing lift.
-                      </p>
-                    </div>
+                  <td style="vertical-align: top; padding: 5px">
+                    <table
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      width="100%"
+                      style="max-width: 260px"
+                    >
+                      <tr>
+                        <td
+                          align="left"
+                          style="padding: 10px 20px; word-break: break-word"
+                        >
+                          <!-- c2 row 1 -->
+                          <div class="highlight-card">
+                            <img
+                              class="ch-imgs"
+                              src="https://ci4.googleusercontent.com/proxy/N3Q4YRUnuzHNcm3iEIic6cfajln2fiMvBY11UoRJPIF0VTD-TGC8mVPmLDM85guWOEWuYqgr6I7IXC8w6WRdZX4ipK_G5EM8NBoL5oq5sB9SUn13pcxd3venoSRK_OOg9KldjCOwUlj0OiBVofi_DxcfvqHhkWEp8UpMptH6ji9vsJnR=s0-d-e1-ft#https://production-codepen-email-assets.s3-us-west-2.amazonaws.com/production/BB4CTLYvTgypbvoHYlG0_sunday-css.png"
+                              alt="All Kinds of Shapes for CSS Art"
+                              width="260"
+                            />
+                            <p class="img-subtext">pen</p>
+                            <a class="ch-title" href="">
+                              All Kinds of Shapes for CSS Art
+                            </a>
+                            <p class="community-highlights-text">
+                              Watch and learn as Julia Miocene begins a series
+                              of four videos on making shapes that turn into CSS
+                              art. You can follow along with the Pen as you
+                              watch!
+                            </p>
+                          </div>
+                          <!-- c2 r2 -->
+                          <div class="highlight-card">
+                            <img
+                              class="ch-imgs"
+                              src="https://ci3.googleusercontent.com/proxy/1_jmjf3L7hhH4TQGalyHJBqBmGHLy2Fj-ra1cLzup-ayYl73wOczR8Qmw1oTNVH2Od51NVW8MtRdhYzDv-SHjDZQafXneLkRE15ocm2Bc-HUYz5IFkDLA9C3DK_MlcEe1OUz_VSPbcr7YX70E15F81FF9HQSxHeTbF5-xjKCrFr-PspfY-Wm7-hGKhQjiQ=s0-d-e1-ft#https://production-codepen-email-assets.s3-us-west-2.amazonaws.com/production/fkWZ7WGSP1EPoG9ZsG5A_infinite-scaffolding.png"
+                              alt="Infinite Scaffolding"
+                              width="260"
+                            />
+                            <p class="img-subtext">pen</p>
+                            <a class="ch-title" href="">
+                              Infinite Scaffolding
+                            </a>
+                            <p class="community-highlights-text">
+                              Carter Lovelace takes the "under construction"
+                              page to a new heights with this infinite-scrolling
+                              scaffolding, complete with a gently bouncing lift.
+                            </p>
+                          </div>
+                          <!-- c2 r3 -->
+                          <!-- c2 r4 -->
+                          <!-- c2 r5 -->
+                          <!-- c2 r6 -->
+                          <!-- c2 r7 -->
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
