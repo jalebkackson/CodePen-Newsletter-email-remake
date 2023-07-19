@@ -19,6 +19,9 @@
         text-decoration: none;
         color: #76adff;
       }
+      h2 {
+        margin-bottom: 0px;
+      }
       .div-col-1 {
         direction: ltr;
         display: inline-block;
@@ -509,7 +512,212 @@
         margin: 0px auto;
         max-width: 600px;
       "
-    ></div>
+    >
+      <table
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        role="presentation"
+        width="100%"
+      >
+        <tr>
+          <td style="padding: 15px">
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              width="100%"
+            >
+              <tr>
+                <td style="padding: 10px 25px; word-break: break-word">
+                  <div>
+                    <!-- begin chris corner (header) -->
+                    <h1>
+                      <img
+                        src="https://ci3.googleusercontent.com/proxy/4Y4QEGN_LI7YodltxCUIG_Wh_VA0FdO-QLopMX-ETQv2Wzsq5U7ItMVHGXYJjEZMd4aTxHFUMCfYsA4l4YvNcg=s0-d-e1-ft#https://assets.codepen.io/t-1/chriscorner.png"
+                        width="65px"
+                        alt=""
+                      />
+                      Chris' Corner
+                    </h1>
+                    <p
+                      style="
+                        color: #9dabc9;
+                        font-size: 16px;
+                        margin: 0 0 15px 0;
+                      "
+                    >
+                      A collection of web design and development news and
+                      thoughts from CodePen's own Chris Coyier.
+                    </p>
+                    <div
+                      style="
+                        height: 5px;
+                        border-radius: 100px;
+                        background: linear-gradient(
+                          92.63deg,
+                          #769aff 8.23%,
+                          #ffdd40 25.83%,
+                          #f19994 51.91%,
+                          #47cf73 68.56%
+                        );
+                      "
+                    ></div>
+                    <!-- content -->
+                    <div>
+                      <p>
+                        I came across Alexey Ardov's work the other day. Looks
+                        like the color bug hit him pretty hard. I first saw this
+                        playground:
+                      </p>
+                      <img
+                        src="https://ci6.googleusercontent.com/proxy/i1zh2wTvOqhMc3xIp3M_I3wJ-Dw7deMoquqtBObKU9xLZIUHw_3jrqK_8OYdfW1vWnCWAEptwU0sdtLHwP9AURmLTGO71FI6WLNIxo_2TcHydY8jXho_9zsSgdmDvVFIC-FbDAGLHjGKfmPTXjMw-w8-ZZUJ2hwASSymsS1ZXHgR5-WciBNR7asFl00n1V_a9w4SHi6fV2DAdQ9Z0HAeK-ynxjo3TRqu=s0-d-e1-ft#https://res.cloudinary.com/css-tricks/image/upload/c_scale,w_848,h_558,dpr_2/f_auto,q_auto/v1686783903/Screenshot-2023-06-14-at-4.00.26-PM.png?_i=AA"
+                        alt=""
+                        width="550"
+                        style="max-width: 100%"
+                      />
+                      <p>
+                        It’s awfully cool. I like seeing color palettes
+                        presented in the context of UI like that. Sometimes it’s
+                        hard to picture how it all might come together if colors
+                        are looked at too abstractly. It doesn’t exactly have an
+                        export tool, but a bunch of CSS custom properties are
+                        barfed out into a style attribute on the
+                        <code>&lt;body&gt;</code> if you were so inclined to use
+                        them for something.
+                      </p>
+                      <p>
+                        Of course I thought: HSL is nicely used here, but what
+                        about the HDR color formats?! Seems like a good
+                        opportunity to set up P3 colors and non-P3 color
+                        fallbacks. I don’t think this fact is lost on Alexey, as
+                        they have lots more color experiments they have built.
+                        For example, this visualizer for looking at color
+                        models, which then it looks like got an upgrade to
+                        visualize more models (and gamuts)
+                      </p>
+                      <img
+                        src="https://ci6.googleusercontent.com/proxy/Db6pyCFmrw7e5-uKP_FcWOcdRlnSQQsT712MRu0VXkIIHLmVV9TPqcMimwhNmCI47GCVSP9FLN63i6YWojIJxtweyoYtAebr68anr0luePCi_Vapt8ZfgQM5-jYG0FjOMFwggCw73DgZFiT-r9-YNvI44aDLDLEyLDx4Zs1iXavOQo02th-W_UQT11gIUeTRIOXSqSixqqZ8Y1cnoKeFnZOrBek5Swco=s0-d-e1-ft#https://res.cloudinary.com/css-tricks/image/upload/c_scale,w_848,h_593,dpr_2/f_auto,q_auto/v1686784321/Screenshot-2023-06-14-at-4.11.47-PM.png?_i=AA"
+                        alt=""
+                        width="550"
+                        style="max-width: 100%"
+                      />
+                      <p>
+                        I like looking at those things as they are a reminder of
+                        just how designed these color spaces are and how deep
+                        the rabbit hole can go. Before you know it, you’re
+                        designing extremely sophisticated accessible color
+                        palette generation tools.
+                      </p>
+                      <hr
+                        style="
+                          border: 0;
+                          border-top: 4px solid #383b43;
+                          margin: 33px auto;
+                          width: 200px;
+                        "
+                      />
+                      <p>
+                        Looking at these one-off single-purpose websites always
+                        puts me in the mood to share more. Aren’t you lucky that
+                        I save links to new ones that I see just for times like
+                        this.
+                      </p>
+                      <h2><a href="">CSS-Pattern</a></h2>
+                      <p>
+                        Temani Afif’s pattern site has some pretty sophisticated
+                        backgrounds that are done just with CSS backgrounds.
+                        Reminds me of Lea Verou's take on this from years ago. A
+                        grand tradition of CSS wizards.
+                      </p>
+                      <figure>
+                        <img
+                          src="https://ci5.googleusercontent.com/proxy/u9qyXrfnwxc-7T933oqjcWSTmI6XrPIk3lEGrkXnm4s0PSROHTPPZrjiTuVLe5omCmPJ2BYyR4AdSJIb3Fn2rodZfy_qa4J6vpRoXdoOAZMxu59syaVH8L0P3tmcr4IKtBAJQnGokYJbGg8kdSiNv43wGEgLw3hGM6NU-NFZ5uxiTqiWfHMOE9wsK0u7fEKXUYf5g4boa8aCDmXFBB2-sgCPF2fZjBvN=s0-d-e1-ft#https://res.cloudinary.com/css-tricks/image/upload/c_scale,w_848,h_573,dpr_2/f_auto,q_auto/v1686860178/Screenshot-2023-06-15-at-1.16.02-PM.png?_i=AA"
+                          alt=""
+                          width="550"
+                          style="max-width: 100%"
+                        />
+                        <figcaption style="font-size: 13px">
+                          Very easy to <a href="">paste into a Pen</a>
+                        </figcaption>
+                      </figure>
+                      <h2><a href="">SpaceBadgers</a></h2>
+                      <p>
+                        Those little badge graphics that are super common at the
+                        top of GitHub repos, created with a super clean URL
+                        format.
+                      </p>
+                      <img
+                        src="https://ci6.googleusercontent.com/proxy/zZ2e_bMl8Ta07swj6drVmifmiwQ2oxCnnTx8Q03Po_Yk2Bo7NQLbllZ7cPxGPX-PhNYVNH4ubbnCAnpS3Q7DmbD5WYuTXd8i2E-Rw_8e074V-Ufx2_dUAIGxM8C4w_hF2Cqgy2O8YTsc3sQ-MwLnC-XJt0mOTOLuUvizFUlTqhqGjYGEmk1Tn1qMLZorQ-8_IdtT3Rg2F3sT7rCik2JSiOMLHGBh1Tp5=s0-d-e1-ft#https://res.cloudinary.com/css-tricks/image/upload/c_scale,w_848,h_493,dpr_2/f_auto,q_auto/v1686868778/Screenshot-2023-06-15-at-3.39.24-PM.png?_i=AA"
+                        alt=""
+                        width="550"
+                        style="max-width: 100%"
+                      />
+                      <p>
+                        Oh and hey they look great small but you can make them
+                        as big as you want and because they are SVG they scale
+                        up nicely.
+                      </p>
+                      <h2><a href="">Theme Toggles</a></h2>
+                      <p>
+                        Need a neat little animated toggle for Light Mode/Dark
+                        Mode? This site has a whole bunch of them:
+                      </p>
+                      <img
+                        src="https://ci6.googleusercontent.com/proxy/Xn-17Q-zW2HgCPRyQ0xouOH5_k-2FFvBT8k4MQLzccQzuHeRkxdU_zE_lxRYtFFcjIXE1xwWX2ad6NPAJRPIK1xKcQMSSdjsAlISrhdyNa2s8uc-FSCpS8SvxcA_VriL3UL1H0YOq9yx7J20ItY6JX772n9BP1INkECp8PfPiByV1twfU1QUWzTu1P_oRRdzrwAk4K4zDrHKyhI0v7B2R8iOfHyEYLJV=s0-d-e1-ft#https://res.cloudinary.com/css-tricks/image/upload/c_scale,w_848,h_673,dpr_2/f_auto,q_auto/v1686869164/Screenshot-2023-06-15-at-3.42.59-PM.png?_i=AA"
+                        alt=""
+                        width="550"
+                        style="max-width: 100%"
+                      />
+                      <p>
+                        Wasn’t much to pluck one over to a Pen, in case you need
+                        a reference there. I saw a little controversy on this as
+                        one of the usage options is as a
+                        <code>&lt;div&gt;</code>, which of course is not an
+                        interactive element. I’m not sure that’s fair, as you
+                        might use this as a visual adornment next to an
+                        interactive button, for example. And the React exports
+                        use <code>&lt;button&gt;</code> nicely.
+                      </p>
+                      <h2><a href="">Tree</a></h2>
+                      <p>
+                        I’m sorry I can’t explain it, but sometimes you have to
+                        update intended text to have a bunch of extra special
+                        ASCII characters that better represent a file tree.
+                      </p>
+                      <img
+                        src="https://ci5.googleusercontent.com/proxy/qXkZ2jzMW0qRMpZTUn1dVO9Um-_1fdFQP6NP9boIVF-E832hPxyFJpALBnlqk74aSNk9wXoC-U_ojwxr7A_KyQyfwbBMrD9A1d5QOi-rUCYnQeklotK4sqetEdooCcs5XW-AqINXvQOtK4mPc9Or_2DY6ZfswhqcchXoD3ltxOXjC29NFDOJfaQZOIn6ruOsNmyX6wAML5B7aji3WIrmz7WUoVSUEix0=s0-d-e1-ft#https://res.cloudinary.com/css-tricks/image/upload/c_scale,w_848,h_479,dpr_2/f_auto,q_auto/v1686870176/Screenshot-2023-06-15-at-4.01.49-PM.png?_i=AA"
+                        alt=""
+                        width="550"
+                        style="max-width: 100%"
+                      />
+                      <h2><a href="">Custom Shape Dividers</a></h2>
+                      <p>
+                        In the rectangular world of web design, sometimes just
+                        what you need is something... not rectangular
+                      </p>
+                      <img
+                        src="https://ci3.googleusercontent.com/proxy/m1MA_QUtNoDuMheksd5aBqA91cu7wZAsoxzGcdhs1KIYKai1VX7aup7MeVKwPa_gLCTGnqFMUp3pjS24r2EAmG3pwO7XNQU_eQstXzNR_0iJHMj0SKsBciaEQj4ZfLL4G8-jVuRZ1tJjtagjsaDkOKHBA6fgCgqUq13LKAD0evNbPzkrjnDCZedOEH3w80jQWmk__J1WPtKuDVNQcktfx9WBlsnUTJm5=s0-d-e1-ft#https://res.cloudinary.com/css-tricks/image/upload/c_scale,w_848,h_573,dpr_2/f_auto,q_auto/v1686870281/Screenshot-2023-06-15-at-4.03.50-PM.png?_i=AA"
+                        alt=""
+                        width="550"
+                        style="max-width: 100%"
+                      />
+                      <p>
+                        The site provides SVG, HTML, and CSS for you to copy
+                        out, which, I’m sure you’re aware, plunking over to
+                        CodePen to play with is a snap. Gosh, isn’t CodePen
+                        useful? You should go PRO.
+                      </p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
     <!-- CODEPEN PRO -->
     <div
       style="
@@ -529,6 +737,7 @@
                 border-radius: 100px;
                 background: #ffdb00;
                 width: 70%;
+                min-width: 170px;
               "
             ></div>
             <p style="">
